@@ -11,17 +11,14 @@ t at an index
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int count = 0;
+	unsigned int num_count;
 	int result;
 
-	while (n > 0)
-	{
-		result = n % 2;
-		if (count == index)
-			return (result);
+	num_count = (sizeof(unsigned long int) * 8);
 
-		n =  n / 2;
-		count++;
-	}
-	return (-1);
+	if (index > num_count)
+		return (-1);
+
+	result = ((n >> index) & 1);
+	return (result);
 }

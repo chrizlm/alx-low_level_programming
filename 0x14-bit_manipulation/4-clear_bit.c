@@ -11,34 +11,15 @@ n a binary
 
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int count = 0;
-	unsigned long int result;
-	char *_binary;
+	unsigned int num_count;
+	unsigned long int result = 1;
 
-	_binary = malloc(sizeof(50 * char));
-	if (_binary == NULL)
+	num_count = (sizeof(unsigned long int) * 8);
+	if (num_count < index)
 		return (-1);
 
-	while (n >= 0)
-	{
-		result = n % 2;
-
-		if (count == index)
-			_binary[count] = '0';
-		else
-		{
-			if (result == 1)
-				_binary[count] = '1';
-			if (result == 0)
-				_binary[count] = '0';
-		};
-
-		n = n / 2;
-		count++;
-	}
-	_binary[count] = '\0';
-
-	n = binary_to_uint(_binary);
+	result = ~(result << index);
+	*n = (*n & result);
 
 	return (1);
 }

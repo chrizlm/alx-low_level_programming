@@ -10,18 +10,25 @@ s decimal to binary
 
 void print_binary(unsigned long int n)
 {
-	unsigned int i = 0;
+	unsigned long int setter_p = 1, num;
+	int count = 0;
 
-	while (pow(2, i) < n)
-		i++;
+	num = n;
 
-	for (; i < 0; i--)
+	while (num > 0)
 	{
-		if (pow(2, i) < n)
-		{
-			n = n - pow(2, i);
+		count++;
+		num >>= 1
+	}
+
+	if (count > 0)
+		setter_p = setter_p << count;
+
+	for (; setter_p > 0; setter_p >>= 1)
+	{
+		if (n & setter_p)
 			_putchar('1');
-		} else
+		else
 			_putchar('0');
 	}
 }
