@@ -15,3 +15,6 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-print_alphabet_x10.c
 Task 3
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-islower.c -o 3-islower
 
+Task 4
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-isalpha.c -o 4-isalpha
+
