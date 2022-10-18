@@ -18,3 +18,6 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-islower.c -o 3-islow
 Task 4
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-isalpha.c -o 4-isalpha
 
+Task 5
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign
+
