@@ -24,3 +24,6 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5
 Task 6
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-abs.c -o 6-abs
 
+Task 7
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-print_last_digit.c -o 7-last_digit
+
