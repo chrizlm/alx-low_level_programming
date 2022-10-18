@@ -1,41 +1,6 @@
 #include "main.h"
 
 /**
- * main - entry point
- * checks function code
- *
- * Return: 0
- */
-
-int main(void)
-{
-	int result;
-
-	result = print_sign(98);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(result + '0');
-	_putchar('\n');
-	result = print_sign(0);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(result + '0');
-	_putchar('\n');
-	result = print_sign(-1);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(result + '0');
-	_putchar('\n');
-	result = print_sign(0xff);
-	_putchar(',');
-	_putchar(' ');
-	_putchar(result + '0');
-	_putchar('\n');
-
-	return (0);
-}
-
-/**
  * print_sign - function
  * checks sign of number
  * @num: number input
