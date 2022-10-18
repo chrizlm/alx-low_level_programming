@@ -10,7 +10,7 @@
 int print_last_digit(int num)
 {
 	int digit;
-
+	
 	if (num < 0)
 	{
 		int absnum;
