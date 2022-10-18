@@ -1,25 +1,6 @@
 #include "main.h"
 
 /**
- * main - entry point
- * test function code
- *
- * Return: 0
- */
-
-int main(void)
-{
-	int result;
-
-	print_last_digit(98);
-	print_last_digit(0);
-	result = print_last_digit(-1024);
-	_putchar('0' + result);
-	_putchar('\n');
-	return (0);
-}
-
-/**
  * print_last_digit - function
  *
  * @num: number
