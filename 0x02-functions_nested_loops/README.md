@@ -21,3 +21,6 @@ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-isalpha.c -o 4-isalp
 Task 5
 gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign
 
+Task 6
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-abs.c -o 6-abs
+
