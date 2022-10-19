@@ -20,20 +20,27 @@ void times_table(void)
 			{
 				m = result % 10;
 				d = result / 10;
+				_putchar(' ');
 				_putchar(d + '0');
 				_putchar(m + '0');
 				if (j == 9)
 					break;
 				_putchar(',');
-				_putchar(' ');
 			} else
 			{
-				_putchar(result + '0');
-				if (j == 9)
-					break;
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if (j == 0)
+				{
+					_putchar(result + '0');
+					_putchar(',');
+				} else
+				{
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(result + '0');
+					if (j == 9)
+						break;
+					_putchar(',');
+				}
 			}
 		}
 		_putchar('\n');
