@@ -17,7 +17,7 @@ void more_numbers(void)
 		{
 			if (j < 10)
 				r = j;
-			else 
+			else
 			{
 				r = j / 10;
 				n = j % 10;
