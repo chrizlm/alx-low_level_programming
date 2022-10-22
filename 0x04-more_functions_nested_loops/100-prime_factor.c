@@ -10,7 +10,8 @@
 
 int main(void)
 {
-	int largest, i;
+	int i;
+	unsigned long largest;
 	unsigned long n = 612852475143;
 
 	while (n % 2 == 0)
