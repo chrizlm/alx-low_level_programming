@@ -11,7 +11,7 @@
 int main(void)
 {
 	int largest, i;
-	long int n = 612852475143;
+	unsigned long n = 612852475143;
 
 	while (n % 2 == 0)
 	{
@@ -23,6 +23,6 @@ int main(void)
 		if (n % i == 0)
 			largest = i;
 	}
-	printf("%d\n", largest);
+	printf("%lu\n", largest);
 	return (0);
 }
