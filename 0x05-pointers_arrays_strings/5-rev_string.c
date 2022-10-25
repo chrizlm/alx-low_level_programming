@@ -16,6 +16,12 @@ void rev_string(char *s)
 		count += 1;
 		n++;
 	}
-	for (i = count - 1, j = 0 ; i >= 0 && j < count ; i--, j++)
-		w[j] = *(s + i);
+	for (i = count - 1; i >= 0 ; i--)
+	{
+		w[j] = s[i];
+		j++;
+	}
+	for (j = 0; j < count ; j++)
+		s[j] = w[j];
+
 }
