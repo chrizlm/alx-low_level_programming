@@ -6,7 +6,7 @@
  * @dest: destination
  * @src: source
  * @n: int value
- * Return
+ * Return: char
  */
 
 char *_strncpy(char *dest, char *src, int n)
