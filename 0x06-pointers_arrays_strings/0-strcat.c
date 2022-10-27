@@ -22,7 +22,7 @@ char *_strcat(char *dest, char *src)
 		counts++;
 		t++;
 	}
-	for (i = 0, countd += 1 ;
+	for (i = 0, countd += 1;
 i <= counts ; i++)
 		dest[countd] = src[i];
 	dest[countd] = '\0';
