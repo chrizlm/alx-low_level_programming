@@ -10,17 +10,20 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int n = 0, count1 = 0, count2 = 0, t = 0;
+	int n = 0, count = 0;
 
-	while (s1[n] != '\0')
+	while ((s1[n] != '\0') && (s2[n] != '\0'))
 	{
-		count1 += s1[n];
-		n++;
+		if (*(s1 + n) == *(s2 + n))
+		{
+			count += 0;
+			n++;
+		}
+		else
+		{
+			count = (s1[n] - s2[n]);
+			break;
+		}
 	}
-	while (s2[t] != '\0')
-	{
-		count2 += s2[t];
-		t++;
-	}
-	return (count1 - count2);
+	return (count);
 }
