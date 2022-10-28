@@ -8,14 +8,11 @@
 
 char *leet(char *a)
 {
-	int i, n = 0, count = 0;
+	int i, n = 0;
 
-	while (a[n] != 0)
-	{
-		count++;
+	while (a[n] != '\0')
 		n++;
-	}
-	for (i = 0 ; i < count ; i++)
+	for (i = 0 ; i < n ; i++)
 	{
 		if (a[i] == 'a' || a[i] == 'A')
 			a[i] = '4';
@@ -28,4 +25,5 @@ char *leet(char *a)
 		if (a[i] == 'l' || a[i] == 'L')
 			a[i] = '1';
 	}
+	return (a);
 }
