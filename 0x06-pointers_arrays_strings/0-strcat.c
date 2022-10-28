@@ -27,4 +27,3 @@ i <= counts ; i++)
 		dest[countd] = src[i];
 	dest[countd] = '\0';
 }
-
