@@ -36,4 +36,5 @@ int main(int argc, char *argv[])
 	change += coin / 1;
 
 	printf("%d\n", change);
+	return (0);
 }
