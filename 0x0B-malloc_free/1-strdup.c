@@ -19,6 +19,7 @@ char *_strdup(char *str)
 		count++;
 		j++;
 	}
+	count++;
 
 	if (str == NULL)
 		return (NULL);
