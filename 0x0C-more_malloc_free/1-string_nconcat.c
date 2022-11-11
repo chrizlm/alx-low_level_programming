@@ -15,7 +15,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int count1 = 0, count2 = 0, total = 0;
+	int count1 = 1, count2 = 1, total = 0;
 	int j = 0, t, i;
 
 	if (s1 == NULL)
@@ -36,9 +36,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	if ((int)n >= count2)
-		total = (count1 + count2) + 1;
+		total = (count1 + count2) - 1;
 	else
-		total = count1 + n + 1;
+		total = count1 + n;
 
 	str = malloc(sizeof(*str) * total);
 
