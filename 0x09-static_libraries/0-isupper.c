@@ -1,5 +1,5 @@
 #include "main.h"
-  
+
 /**
  * _isupper - function
  * that checks for upper case lettes
@@ -9,12 +9,12 @@
 
 int _isupper(int c)
 {
-        int l;
+	int l;
 
-        for (l = 65 ; l <= 90 ; l++)
-        {
-                if (c == l)
-                        return (1);
-        }
-        return (0);
+	for (l = 65 ; l <= 90 ; l++)
+	{
+		if (c == l)
+			return (1);
+	}
+	return (0);
 }

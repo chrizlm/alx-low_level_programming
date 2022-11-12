@@ -8,7 +8,8 @@
  * Return: char pointer
  */
 
-char *_memset(char *s, char b __attribute__((unused)), unsigned int n __attribute__((unused)))
+char *_memset(char *s, char b __attribute__((unused)),
+unsigned int n __attribute__((unused)))
 {
 	return (s);
 }

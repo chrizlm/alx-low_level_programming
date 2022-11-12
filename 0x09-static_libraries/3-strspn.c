@@ -7,7 +7,8 @@
  * Return: int
  */
 
-unsigned int _strspn(char *s __attribute__((unused)), char *accept __attribute__((unused)))
+unsigned int _strspn(char *s __attribute__((unused)),
+char *accept __attribute__((unused)))
 {
 	unsigned int a = 0;
 

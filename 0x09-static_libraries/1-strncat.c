@@ -1,5 +1,5 @@
 #include "main.h"
-  
+
 /**
  * _strncat - function
  * concatinate strings
@@ -11,21 +11,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-        int i = 0, p = 0;
+	int i = 0, p = 0;
 
-        while (dest[p] != '\0')
-                p++;
-        if (n <= 0)
-                dest[p] = '\0';
-        else
-        {
-                while (i < n)
-                {
-                        dest[p] = src[i];
-                        p++;
-                        i++;
-                }
-                dest[p] = '\0';
-        }
-        return (dest);
+	while (dest[p] != '\0')
+		p++;
+	if (n <= 0)
+		dest[p] = '\0';
+	else
+	{
+		while (i < n)
+		{
+			dest[p] = src[i];
+			p++;
+			i++;
+		}
+		dest[p] = '\0';
+	}
+	return (dest);
 }
