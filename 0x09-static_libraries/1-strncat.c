@@ -1,16 +1,31 @@
 #include "main.h"
-
+  
 /**
  * _strncat - function
- * @dest: input
- * @src: input
- * @n: input
- * Return: char pointer
+ * concatinate strings
+ * @dest: destination
+ * @src: source
+ * @n: int
+ * Return: char
  */
 
-char *_strncat(char *dest, char *src, int n __attribute__((unused)))
+char *_strncat(char *dest, char *src, int n)
 {
-	dest = src;
+        int i = 0, p = 0;
 
-	return (dest);
+        while (dest[p] != '\0')
+                p++;
+        if (n <= 0)
+                dest[p] = '\0';
+        else
+        {
+                while (i < n)
+                {
+                        dest[p] = src[i];
+                        p++;
+                        i++;
+                }
+                dest[p] = '\0';
+        }
+        return (dest);
 }

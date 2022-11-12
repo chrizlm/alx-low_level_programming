@@ -1,12 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * _abs - function
- * @n: input
- * Return: int
+ * gives the absolute value
+ * @num: number
+ *
+ * Return: 0
  */
 
-int _abs(int n)
+int _abs(int num)
 {
-	return (n);
+	if (num < 0)
+		return (num * -1);
+	else
+		return (num);
 }

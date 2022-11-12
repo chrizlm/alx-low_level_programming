@@ -2,14 +2,24 @@
   
 /**
  * _strcat - function
- * @dest: input
- * @src: input
- * Return: char pointer
+ * concatinates strings
+ * @dest: destination
+ * @src: source string
+ * Return: char
  */
 
 char *_strcat(char *dest, char *src)
 {
-	dest = src;
+        int n = 0, t = 0;
 
-	return (dest);
+        while (dest[n] != '\0')
+                n++;
+        while (src[t] != '\0')
+        {
+                dest[n] = src[t];
+                n++;
+                t++;
+        }
+        dest[n] = '\0';
+        return (dest);
 }

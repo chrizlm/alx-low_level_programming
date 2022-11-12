@@ -1,12 +1,13 @@
-#include "main.h"
-#include <stdio.h>
-
+#include<stdio.h>
+  
 /**
- * _puts - function
- * @s: input
- * Return: void
+ * main -Entry point
+ * use of puts function
+ * Return: Always  0 (success)
  */
-void _puts(char *s __attribute__((unused)))
+
+int main(void)
 {
-	printf("good\n");
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }

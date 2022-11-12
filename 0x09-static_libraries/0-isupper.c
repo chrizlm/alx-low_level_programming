@@ -1,12 +1,20 @@
 #include "main.h"
-
+  
 /**
  * _isupper - function
- * @c: input
- * Return: int
+ * that checks for upper case lettes
+ * @c: input value
+ * Return: 0 or 1
  */
 
 int _isupper(int c)
 {
-	return (c);
+        int l;
+
+        for (l = 65 ; l <= 90 ; l++)
+        {
+                if (c == l)
+                        return (1);
+        }
+        return (0);
 }
