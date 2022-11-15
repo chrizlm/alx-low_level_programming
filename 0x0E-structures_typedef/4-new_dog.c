@@ -17,6 +17,22 @@ int name_len(char *name)
 }
 
 /**
+ * name_copy - function
+ * @src: source
+ * @dest: destination
+ * Return: void
+ */
+
+void name_copy(char *src, char *dest)
+{
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+		dest[i] = src[i];
+	dest[i] = '\0';
+}
+
+/**
  * new_dog - function
  * @name: name input
  * @age: age input
@@ -40,11 +56,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 	name_cpy = malloc(name_len(name));
 	if (name_cpy == NULL)
 		return (NULL);
-	name_cpy = new_dog_obj->name;
+	name_copy(name, name_cpy);
 	owner_cpy = malloc(name_len(owner));
 	if (owner_cpy == NULL)
 		return (NULL);
-	owner_cpy = new_dog_obj->owner;
+	name_copy(owner, owner_cpy);
 
 	return (new_dog_obj);
 }
