@@ -1,4 +1,4 @@
-#include "function_pointers"
+#include <stdlib.h>
 
 /**
  * int_index - function for counting
@@ -11,16 +11,14 @@
 
 int int_index(int *array, int size, int (*cmp)(int))
 {
-	int i, count = 0;
+	int i;
 
-	if (size <= 0)
+	if (array == NULL || cmp == NULL || size <= 0)
 		return (-1);
 
 	for (i = 0; i < size; i++)
-		count += cmp(array[i]);
+		if (cmp(array[i]))
+			return (i);
 
-	if (count == 0)
-		return (-1);
-	if (count != 0)
-		return (count);
+	return (-1);
 }
