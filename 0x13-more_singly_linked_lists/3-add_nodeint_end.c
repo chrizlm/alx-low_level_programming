@@ -11,12 +11,10 @@ at adds node at the end of a linked list
 
 listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint *new_node;
+	listint_t *new_node, *temp;
 
 	if (head == NULL)
 		return (NULL);
-	if (n == NULL)
-		n = 0;
 
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
@@ -25,12 +23,18 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	new_node->next = NULL;
 	new_node->n = n;
 
-	while (head->next != NULL)
-		head = head->next;
+	if (*head == NULL)
+		*head = new_node;
+	else
+	{
+		temp = *head;
 
-	*head->next = new_node;
+		while (temp->next != NULL)
+			temp = temp->next;
 
-	free(new_node);
+		temp->next = new_node;
 
-	return (*head);
+	}
+
+	return (new_node);
 }
