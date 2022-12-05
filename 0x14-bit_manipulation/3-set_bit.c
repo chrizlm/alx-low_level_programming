@@ -39,7 +39,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	_binary[count] = '\0';
 
-	n = binary_to_unit(_binary);
+	n = binary_to_uint(_binary);
 
 	return (1);
 }

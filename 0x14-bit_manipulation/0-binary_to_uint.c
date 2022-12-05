@@ -8,7 +8,7 @@ s binary numbers to decimal
  * Return: int value
  */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int sum = 0, i, calc = 0, count = 0;
 
