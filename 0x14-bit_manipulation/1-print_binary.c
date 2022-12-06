@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 	while (num > 0)
 	{
 		count++;
-		num >>= 1
+		num >>= 1;
 	}
 
 	if (count > 0)

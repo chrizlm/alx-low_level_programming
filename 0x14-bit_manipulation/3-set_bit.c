@@ -15,10 +15,10 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned long int result = 1;
 
 	num_count = (sizeof(unsigned long int) * 8);
-	if (num_count < index))
+	if (num_count < index)
 		return (-1);
 
-	result <<= index;
+	result = result << index;
 	*n = (*n | result);
 
 	return (1);
